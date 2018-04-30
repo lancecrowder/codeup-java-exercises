@@ -30,7 +30,7 @@ public class ConsoleExercises {
         Scanner jc = new Scanner(System.in).useDelimiter("\n");
         myString = jc.nextLine();
         System.out.println(myString);
-//          Area and Perimeter Exercise
+//          Area, Perimeter and Volume Exercise
         double width;
         double length;
         double height;
@@ -39,11 +39,14 @@ public class ConsoleExercises {
         double volume;
         System.out.println("Please, enter the Length of the room: ");
         Scanner tc = new Scanner(System.in);
-        length = Integer.parseInt(tc.nextLine());
+        length = Double.parseDouble(tc.nextLine());
+        System.out.println("Length: " + length);
         System.out.println("Please, Enter the Width of the room: ");
-        width = Integer.parseInt(tc.nextLine());
+        width = Double.parseDouble(tc.nextLine());
+        System.out.println("Width: " + width);
         System.out.println("Please, Enter the Height of the room: ");
-        height = Integer.parseInt(tc.nextLine());
+        height = Double.parseDouble(tc.nextLine());
+        System.out.println("Height" + height);
         area = length*width;
         perimeter = (2*length)+(2*width);
         volume = height*width*length;
