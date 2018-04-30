@@ -13,7 +13,7 @@ public class HelloWorld {
         System.out.println(myString);
 
         long myNumber;
-        myNumber = 84;
+        myNumber = 123L;
         System.out.println(myNumber);
     }
 }
