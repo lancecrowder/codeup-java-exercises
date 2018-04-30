@@ -1,6 +1,10 @@
-public/main.js
-*.map
-node_modules
-.idea
-*.iml
+# MacOS
 .DS_Store
+
+# IntelliJ
+.idea/*
+*.iml
+
+# Compiled output
+*.class
+out/*
