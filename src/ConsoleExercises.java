@@ -26,7 +26,7 @@ public class ConsoleExercises {
         String myString;
         System.out.println(("Please enter a sentence: "));
         Scanner jc = new Scanner(System.in);
-        myString = jc.next();
+        myString = jc.nextLine();
         System.out.println(myString);
     }
 }
