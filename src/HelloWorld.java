@@ -12,8 +12,8 @@ public class HelloWorld {
         String myString = "Stringy";
         System.out.println(myString);
 
-        long myNumber;
-        myNumber = 123;
+        double myNumber;
+        myNumber = 3.14;
         System.out.println(myNumber);
     }
 }
