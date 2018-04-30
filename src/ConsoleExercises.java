@@ -41,12 +41,15 @@ public class ConsoleExercises {
         Scanner tc = new Scanner(System.in);
         length = Double.parseDouble(tc.nextLine());
         System.out.println("Length: " + length);
+        System.out.println();
         System.out.println("Please, Enter the Width of the room: ");
         width = Double.parseDouble(tc.nextLine());
         System.out.println("Width: " + width);
+        System.out.println();
         System.out.println("Please, Enter the Height of the room: ");
         height = Double.parseDouble(tc.nextLine());
-        System.out.println("Height" + height);
+        System.out.println("Height: " + height);
+        System.out.println();
         area = length*width;
         perimeter = (2*length)+(2*width);
         volume = height*width*length;
