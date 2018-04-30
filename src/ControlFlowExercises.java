@@ -5,6 +5,5 @@ public class ControlFlowExercises {
             System.out.println(i);
             i = Math.pow(i, 2);
         }
-
-        }
     }
+}
