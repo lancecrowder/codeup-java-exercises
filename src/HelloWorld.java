@@ -13,6 +13,7 @@ public class HelloWorld {
         System.out.println(myString);
 
         long myNumber;
+        myNumber = 84;
         System.out.println(myNumber);
     }
 }
