@@ -31,18 +31,24 @@ public class ConsoleExercises {
         myString = jc.nextLine();
         System.out.println(myString);
 //          Area and Perimeter Exercise
-        int length;
-        int width;
-        int area;
-        int perimeter;
+        double width;
+        double length;
+        double height;
+        double area;
+        double perimeter;
+        double volume;
         System.out.println("Please, enter the Length of the room: ");
         Scanner tc = new Scanner(System.in);
         length = Integer.parseInt(tc.nextLine());
         System.out.println("Please, Enter the Width of the room: ");
         width = Integer.parseInt(tc.nextLine());
+        System.out.println("Please, Enter the Height of the room: ");
+        height = Integer.parseInt(tc.nextLine());
         area = length*width;
         perimeter = (2*length)+(2*width);
-        System.out.println(("The area of the room is: " + area));
+        volume = height*width*length;
+        System.out.println(("The Area of the room is: " + area));
         System.out.println(("The Perimeter of the room is: " + perimeter));
+        System.out.println(("The Volumn of the room is: " + volume));
     }
 }
