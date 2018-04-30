@@ -9,7 +9,7 @@ public class HelloWorld {
         int myFavoriteNumber = 42;
         System.out.println(myFavoriteNumber);
 
-        char myString = "Stringy";
+        String myString = 3.14159;
         System.out.println(myString);
 
 
