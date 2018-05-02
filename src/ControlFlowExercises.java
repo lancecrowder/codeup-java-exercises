@@ -2,9 +2,9 @@ import java.util.Scanner;
 
 public class ControlFlowExercises {
     public static void main(String[] args) {
-        String Y = "Y";
+//        String Y = "Y";
         String y = "y";
-        String Yes = "Yes";
+//        String Yes = "Yes";
         String yes = "yes";
         String playAgain;
         Scanner letter = new Scanner(System.in);
