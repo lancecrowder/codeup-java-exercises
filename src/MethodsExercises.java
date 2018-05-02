@@ -1,3 +1,6 @@
+//import java.sql.SQLOutput;
+import java.util.Scanner;
+
 public class MethodsExercises {
     public static void main(String[] args) {
         System.out.println("Addition  =  " + addition(5, 2));
@@ -6,6 +9,14 @@ public class MethodsExercises {
         System.out.println("division = " + division(5, 2));
         System.out.println("modulus = " + modulus(5, 2));
         System.out.println(("multiply recursive = " + multiplyRecursive(5, 2)));
+        System.out.println(getInteger(1, 10));
+        do {
+            System.out.println(getFactoral(getInteger(1, 10)));
+        } while (wantsToContinue());
+
+        do {
+            System.out.println(getSides());
+        } while (wantsToContinue());
     }
 
     public static double addition (double i, double j) {
@@ -26,9 +37,7 @@ public class MethodsExercises {
         return i%j;
     }
 
-//    public static int getInteger(int min, int max);
-
-    public static double multiplyRecursive (double i, double j){
+    public static int multiplyRecursive (int i, int j){
         if (i == 0 || j == 0){
             return 0;
         }
@@ -41,4 +50,51 @@ public class MethodsExercises {
         return i + multiplyRecursive(i,j-1);
     }
 
+    public static int getInteger(int min, int max) {
+        System.out.print("Enter a number between " + min +" and " + max + ": ");
+        Scanner input = new Scanner(System.in).useDelimiter("\n");
+        int userInput = input.nextInt();
+        if (userInput < min || userInput > max){
+            return getInteger(min, max);
+        }
+        return userInput;
+    }
+
+    public static int getFactoral ( int userInput) {
+            if (userInput < 2) {
+                return 1;
+            }
+            return userInput * getFactoral(userInput - 1);
+    }
+
+    public static boolean wantsToContinue(){
+        String y = "y";
+        String yes = "yes";
+        String playAgain;
+        Scanner letter = new Scanner(System.in).useDelimiter("\n");
+        System.out.println("Press Y to continue");
+        playAgain = letter.next();
+        if(playAgain.equalsIgnoreCase(y) || playAgain.equalsIgnoreCase(yes)) {
+            return true;
+        } else {
+            return false;
+        }
+    }
+
+    public static int getSides() {
+        System.out.print("Enter a number of Die sides :");
+        Scanner input = new Scanner(System.in).useDelimiter("\n");
+        int dieSides = input.nextInt();
+        return diceRoll(dieSides);
+    }
+
+    public static int diceRoll (int dieSides){
+        if (dieSides > 1){
+            double dieOne = Math.round(Math.random()*dieSides);
+            System.out.println("First Dice:" + dieOne);
+            double dieTwo = Math.round(Math.random()*dieSides);
+            System.out.println("Second Dice:" + dieTwo);
+        }
+        return (0);
+    }
 }
