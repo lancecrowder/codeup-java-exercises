@@ -18,7 +18,7 @@ public class MethodsExercises {
             System.out.println(getSides());
         } while (wantsToContinue());
     }
-
+// ----------------------Rudimentary Calc-----------------------------
     public static double addition (double i, double j) {
         return i+j;
     }
@@ -36,7 +36,7 @@ public class MethodsExercises {
     public static double modulus (double i, double j) {
         return i%j;
     }
-
+//-----------------Multiply Recursive--------------------------------------
     public static int multiplyRecursive (int i, int j){
         if (i == 0 || j == 0){
             return 0;
@@ -49,7 +49,7 @@ public class MethodsExercises {
         }
         return i + multiplyRecursive(i,j-1);
     }
-
+// -------------------Get Int---------------------------------------
     public static int getInteger(int min, int max) {
         System.out.print("Enter a number between " + min +" and " + max + ": ");
         Scanner input = new Scanner(System.in).useDelimiter("\n");
@@ -59,14 +59,14 @@ public class MethodsExercises {
         }
         return userInput;
     }
-
+//-----------------Factoral------------------------------------------
     public static int getFactoral ( int userInput) {
             if (userInput < 2) {
                 return 1;
             }
             return userInput * getFactoral(userInput - 1);
     }
-
+//--------------------------Wants to Continue-----------------------
     public static boolean wantsToContinue(){
         String y = "y";
         String yes = "yes";
@@ -80,7 +80,7 @@ public class MethodsExercises {
             return false;
         }
     }
-
+// ----------------Dice Exercise----------------------------
     public static int getSides() {
         System.out.print("Enter a number of Die sides :");
         Scanner input = new Scanner(System.in).useDelimiter("\n");
@@ -90,9 +90,9 @@ public class MethodsExercises {
 
     public static int diceRoll (int dieSides){
         if (dieSides > 1){
-            double dieOne = Math.round(Math.random()*dieSides);
+            double dieOne = (int) (Math.random()*dieSides) + 1;
             System.out.println("First Dice:" + dieOne);
-            double dieTwo = Math.round(Math.random()*dieSides);
+            double dieTwo = (int) (Math.random()*dieSides) + 1;
             System.out.println("Second Dice:" + dieTwo);
         }
         return (0);
