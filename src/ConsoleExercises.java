@@ -55,6 +55,6 @@ public class ConsoleExercises {
         volume = height*width*length;
         System.out.println(("The Area of the room is: " + area));
         System.out.println(("The Perimeter of the room is: " + perimeter));
-        System.out.println(("The Volumn of the room is: " + volume));
+        System.out.println(("The Volume of the room is: " + volume));
     }
 }
