@@ -11,22 +11,18 @@ public class Input {
         this.scanner = new Scanner(System.in);
     }
 
-    String getString(){
+    String getString(String prompt){
         String input;
-        System.out.println("Please enter a string");
+        System.out.println(prompt);
         input = this.scanner.nextLine();
         return input;
     }
 
-    boolean yesNo(){
+    boolean yesNo(String prompt){
         String input;
-        System.out.println("Yes or No?");
+        System.out.println(prompt);
         input = this.scanner.nextLine();
-        if(input.equalsIgnoreCase("y") || input.equalsIgnoreCase("yes")) {
-            return true;
-        } else {
-            return false;
-        }
+        return input.equalsIgnoreCase("y") || input.equalsIgnoreCase("yes");
     }
 
     int getInt(int min, int max){

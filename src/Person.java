@@ -1,8 +1,8 @@
 class Person {
     private String name;
 
-    public Person (String userName){
-        name = userName;
+    public Person (String name){
+        setName(name);
     }
 
     public String getName(){
@@ -14,7 +14,7 @@ class Person {
     }
 
     public void sayHello(){
-        System.out.println("Hello, " + name + "!!!");
+        System.out.printf("Hello, %s!!!%n", name);
     }
 
     public static void main(String[] args) {
