@@ -68,13 +68,11 @@ public class MethodsExercises {
     }
 //--------------------------Wants to Continue-----------------------
     public static boolean wantsToContinue(){
-        String y = "y";
-        String yes = "yes";
         String playAgain;
         Scanner letter = new Scanner(System.in).useDelimiter("\n");
         System.out.println("Press Y to continue");
         playAgain = letter.next();
-        if(playAgain.equalsIgnoreCase(y) || playAgain.equalsIgnoreCase(yes)) {
+        if(playAgain.equalsIgnoreCase("y") || playAgain.equalsIgnoreCase("yes")) {
             return true;
         } else {
             return false;
