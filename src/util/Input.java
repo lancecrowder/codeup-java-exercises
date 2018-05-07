@@ -42,13 +42,13 @@ public class Input {
     double getDouble(double min, double max){
         double input;
         do{
-            System.out.println("Please, enter a Double between " + min + " and " + max + ".");
+            System.out.println("Please, enter any number between " + min + " and " + max + ".");
             input = this.scanner.nextDouble();}
         while (input < min || input > max);
         return input;
     }
     public double getDouble() {
-        System.out.println("Please, enter a Double");
+        System.out.println("Please, enter any number");
         return this.scanner.nextDouble();
     }
 }
