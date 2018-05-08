@@ -6,7 +6,6 @@ public class Square extends Rectangle {
         super(side, side);
         this.side = side;
     }
-//        @Overrides
         public int getArea() {
         return ((int)Math.pow(side, 2));
         }
