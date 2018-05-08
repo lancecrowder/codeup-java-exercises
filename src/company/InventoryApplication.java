@@ -1,5 +1,7 @@
 package company;
 
+import util.Input;
+
 public class InventoryApplication {
 
     Product[] products = new Product[4];
