@@ -1,9 +1,6 @@
 package Shapes;
 
 public class ShapesTest {
-
-    static Rectangle rectangle = new Rectangle();
-
     public static void main(String[] args) {
         Rectangle box1 = new Rectangle(4,5);
         Rectangle box2 = new Square(5);
@@ -17,6 +14,5 @@ public class ShapesTest {
         System.out.println("box2 width = " + box2.getWidth());
         System.out.println("box2 perimeter = " + box2.getPerimeter());
         System.out.println("box2 area = " + box2.getArea());
-
     }
 }
