@@ -25,7 +25,7 @@ public class GameOfWar {
                 } else if (oneCard.value < twoCard.value){
                     player2.setGamesWon(i+1);
                     System.out.println("Player2 wins this round");
-                } else System.out.println("cats game");
+                } else System.out.println("WINNER: NONE");
             }
             System.out.println();
             System.out.println("Player1 score: " + player1.gamesWon);
@@ -33,8 +33,10 @@ public class GameOfWar {
             System.out.println();
             if (player1.gamesWon > player2.gamesWon){
                 System.out.println("Player1 WINS!!!");
-            } else {
+            } else if (player1.gamesWon<player2.gamesWon) {
                 System.out.println("Player2 WINS!!!");
+            } else {
+                System.out.println("WINNER: NONE");
             }
         } while (wantsToContinue());
     }
