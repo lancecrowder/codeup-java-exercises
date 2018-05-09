@@ -2,7 +2,7 @@ package CardGames;
 
 public class Card {
 
-    public Card (){};
+    public Card (){}
 
     protected String suit;
     protected int value;
@@ -12,19 +12,7 @@ public class Card {
         this.value = value;
     }
 
-    public String getSuit() {
-        return suit;
-    }
-
-    public void setSuit(String suit) {
-        this.suit = suit;
-    }
-
-    public int getValue() {
-        return value;
-    }
-
-    public void setValue(int value) {
-        this.value = value;
+    public String toString() { // override
+        return value + " of " + suit;
     }
 }
