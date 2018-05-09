@@ -12,5 +12,4 @@ public class Author extends Person {
         super(name);
         this.numberOfBooksWritten = numberOfBooksWritten;
     }
-
 }
