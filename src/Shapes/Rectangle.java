@@ -1,10 +1,8 @@
 package Shapes;
-
 public class Rectangle {
     private int length;
     private int width;
     Rectangle(int length, int width) {
-        //Shadowing = assigning a named property on the object with an argument coming in from a method
         this.length = length;
         this.width = width;
     }

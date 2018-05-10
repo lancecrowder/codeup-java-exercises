@@ -37,6 +37,7 @@ public class GameOfWar {
                 System.out.println("Player2 WINS!!!");
             } else {
                 System.out.println("WINNER: NONE");
+                System.out.println("The Best is, not to Play the Game");
             }
         } while (wantsToContinue());
     }

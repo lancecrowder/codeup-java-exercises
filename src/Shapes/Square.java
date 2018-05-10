@@ -1,5 +1,4 @@
 package Shapes;
-
 public class Square extends Rectangle {
     private int side;
     Square(int side) {
