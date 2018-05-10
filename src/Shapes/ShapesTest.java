@@ -14,13 +14,19 @@ public class ShapesTest {
         System.out.println("box2 perimeter = " + box2.getPerimeter());
         System.out.println("box2 area = " + box2.getArea());
         System.out.println();
+
         Measurable myShape = new Rectangle(8,10);;
+        Measurable myNewShape = new Square(10);
+
         System.out.println("Rectangle Stuff:");
+        System.out.println("Width: "+((Rectangle) myNewShape).getWidth());
+        System.out.println("Length: "+((Rectangle) myNewShape).getLength());
         System.out.println("Area: " + myShape.getArea());
         System.out.println("Perimeter: " + myShape.getPerimeter());
         System.out.println();
         System.out.println("Box Stuff");
-        Measurable myNewShape = new Square(10);
+        System.out.println("Width: "+((Square) myNewShape).getWidth());
+        System.out.println("Length: "+((Square) myNewShape).getLength());
         System.out.println("Area: " + myNewShape.getArea());
         System.out.println("Perimeter: " + myNewShape.getPerimeter());
     }
