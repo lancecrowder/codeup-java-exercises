@@ -11,21 +11,21 @@ public class Input {
         this.scanner = new Scanner(System.in);
     }
 
-    String getString(String prompt){
+    public String getString(String prompt){
         String input;
         System.out.println(prompt);
         input = this.scanner.nextLine();
         return input;
     }
 
-    boolean yesNo(String prompt){
+    public boolean yesNo(String prompt){
         String input;
         System.out.println(prompt);
         input = this.scanner.nextLine();
         return input.equalsIgnoreCase("y") || input.equalsIgnoreCase("yes");
     }
 
-    int getInt(int min, int max){
+    public int getInt(int min, int max){
         int input;
         do{
         System.out.println("Please, enter an integer between " + min + " and " + max + ".");
@@ -34,12 +34,12 @@ public class Input {
         return input;
     }
 
-    int getInt(){
+    public int getInt(){
         System.out.println("Please, enter an integer");
         return this.scanner.nextInt();
     }
 
-    double getDouble(double min, double max){
+    public double getDouble(double min, double max){
         double input;
         do{
             System.out.println("Please, enter any number between " + min + " and " + max + ".");
