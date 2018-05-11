@@ -1,23 +1,14 @@
 package Shapes;
-
-public class Rectangle {
-    private int length;
-    private int width;
-    Rectangle(int length, int width) {
-        //Shadowing = assigning a named property on the object with an argument coming in from a method
-        this.length = length;
-        this.width = width;
+public class Rectangle extends Quadrilateral {
+    public Rectangle(int length, int width) {
+        super(length, width);
     }
-    int getLength() {
-        return length;
-    }
-    int getWidth() {
-        return width;
-    }
-    public int getPerimeter(){
+    @Override
+    public double getPerimeter() {
         return (2*length)+(2*width);
     }
-    public int getArea(){
+    @Override
+    public double getArea() {
         return length*width;
     }
 }

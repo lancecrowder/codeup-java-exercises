@@ -5,10 +5,10 @@ public class Square extends Rectangle {
         super(side, side);
         this.side = side;
     }
-    public double getArea() {
-        return (Math.pow(side, 2));
-    }
-    public double getPerimeter(){
+        public int getArea() {
+        return ((int)Math.pow(side, 2));
+        }
+        public int getPerimeter(){
         return 4*side;
-    }
+        }
 }
