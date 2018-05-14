@@ -36,25 +36,24 @@ public class GradesApplication {
             System.out.println("|" + students.get(student1) + "| |" + students.get(student2) + "| |" + students.get(student3) + "| |" + students.get(student4) + "|\n");
             Input input = new Input();
             input.getString("What student would you like to see more information about?\n >");
-            input.toString();
+            System.out.println(input);
+//            input.toString();
 //            for (Student student: map.keyset()){
-//
 //            }
 
-
-//            if (.equalsIgnoreCase("lancecrowder")) {
+//            if (input.equalsIgnoreCase("lancecrowder")) {
 //                System.out.println("Student1: " + student1.getName());
 //                System.out.println("Grades: " + student1.getGrades());
 //                System.out.println("GPA: " + student1.getGradeAverage());
-//            } else if (test.equalsIgnoreCase("BobBear")) {
+//            } else if (input.equalsIgnoreCase("BobBear")) {
 //                System.out.println("Student2: " + student2.getName());
 //                System.out.println("Grades: " + student2.getGrades());
 //                System.out.println("GPA: " + student2.getGradeAverage());
-//            } else if (test.equalsIgnoreCase("EmaNymton")) {
+//            } else if (input.equalsIgnoreCase("EmaNymton")) {
 //                System.out.println("Student3: " + student3.getName());
 //                System.out.println("Grades: " + student3.getGrades());
 //                System.out.println("GPA: " + student3.getGradeAverage());
-//            } else if (test.equalsIgnoreCase("CoolArrow")) {
+//            } else if (input.equalsIgnoreCase("CoolArrow")) {
 //                System.out.println("Student4: " + student4.getName());
 //                System.out.println("Grades: " + student4.getGrades());
 //                System.out.println("GPA: " + student4.getGradeAverage());
