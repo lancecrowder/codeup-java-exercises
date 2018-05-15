@@ -8,7 +8,7 @@ public class Input {
 
     //-----constructor------
     public Input(){
-        this.scanner = new Scanner(System.in);
+        this.scanner = new Scanner(System.in).useDelimiter("\n");
     }
 
     public String getString(String prompt){
@@ -25,30 +25,63 @@ public class Input {
         return input.equalsIgnoreCase("y") || input.equalsIgnoreCase("yes");
     }
 
-    public int getInt(int min, int max){
-        int input;
-        do{
+    public int getInt(int min, int max) {
         System.out.println("Please, enter an integer between " + min + " and " + max + ".");
-        input = this.scanner.nextInt();}
-        while (input < min || input > max);
-        return input;
+        String s = this.scanner.nextLine();
+        int input;
+        try {
+            input = Integer.valueOf(s);
+        } catch (NumberFormatException e){
+            System.out.println("Must be an integer.");
+            return getInt(min, max);
+        }
+        if (input > min && input < max) {
+            return input;
+        } else {
+            return getInt(min, max);
+        }
     }
 
-    public int getInt(){
+    public int getInt() {
         System.out.println("Please, enter an integer");
-        return this.scanner.nextInt();
+        String s = this.scanner.nextLine();
+        int num;
+        try {
+            num = Integer.valueOf(s);
+        } catch (NumberFormatException e){
+            System.out.println("Must be an integer.");
+            return getInt();
+        }
+        return num;
     }
 
     public double getDouble(double min, double max){
+        System.out.println("Please, enter a Number between " + min + " and " + max + ".");
+        String s = this.scanner.nextLine();
         double input;
-        do{
-            System.out.println("Please, enter any number between " + min + " and " + max + ".");
-            input = this.scanner.nextDouble();}
-        while (input < min || input > max);
-        return input;
+        try {
+            input = Integer.valueOf(s);
+        } catch (NumberFormatException e){
+            System.out.println("Must be a Number.");
+            return getDouble(min, max);
+        }
+        if (input > min && input < max) {
+            return input;
+        } else {
+            return getDouble(min, max);
+        }
     }
+
     public double getDouble() {
         System.out.println("Please, enter any number");
-        return this.scanner.nextDouble();
+        String s = this.scanner.nextLine();
+        double num;
+        try {
+            num = Double.valueOf(s);
+        } catch (NumberFormatException e){
+            System.out.println("Must be a Number.");
+            return getDouble();
+        }
+        return num;
     }
 }
